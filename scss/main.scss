@@ -158,7 +158,7 @@ html body {
                     float: left;
     
                     li {
-                        font-size: 18px;
+                       font-size: 18px;
                        text-align: center;
                        line-height: 64px;
                        color: #d7075f;
@@ -310,28 +310,119 @@ html body {
                 margin: -40px 0 0 0;
             }
 
-            .main {
+            .eight-main {
                 width: 100%;
-                height: 685px;
-                background: #000;
+                height: 675px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                margin-top: 35px;
 
                 .eight-bg {
                   width: 315px;
                   height: 305px;
-                  background: #fff;
+                  background: url(../img/main-bg.png) no-repeat;
                 }
             }
         }
+    }
+
+    footer {
+        width: 100%;
+        height:auto;
+
+        .footer-top {
+            width: 100%;
+            height: 57px;
+            background: url(../img/footer-1.png) no-repeat;
+
+            article {
+                width: 1400px;
+                height: auto;
+                margin: auto;
+    
+                ul {
+                    width: 695px;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-around;
+                    float: left;
+    
+                    li {
+                        width: 116px;
+                        height: auto;
+                        text-align: center;
+                        line-height: 57px;
+                        color: #d7075f;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+    
+                span {
+                    position: absolute;
+                    float: right;
+                    text-align: center;
+                    line-height: 57px;
+                    color: #d7075f;
+                    font-weight: bold;
+                    right: 320px;
+                }
+            }
+        }
+
+        .footer-bottom {
+            width: 100%;
+            height: 98px;
+            background: #f7ac46d9;
+
+            article {
+                width: 1400px;
+                height: 98px;
+                margin: auto;
+
+                .footer-text {
+                    width: 755px;
+                    height: auto;
+                    margin: auto;
+                    padding-top: 16px;
+
+                    p {
+                        text-align: center;
+                        line-height: 29px;
+                        font-size: 13px;
+                        color: #291143;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .fix-right {
+        width: 223px;
+        height: 259px;
+        background: url(../img/flix-right.png) no-repeat;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .fix-left {
+        width: 221px;
+        height: 298px;
+        background: url(../img/flix-left.png) no-repeat;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     .bg {
         width: 100%;
         height: 100%;
         position: absolute;
         background: url(../img/bg.png)  no-repeat;
-        background-size: 100%;
+        background-size: cover;
         top: 0;
         left: 0;
         z-index: -999;
