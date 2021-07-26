@@ -417,6 +417,94 @@ html body {
         bottom: 0;
         left: 0;
     }
+
+    .top {
+        width: 78px;
+        height: 97px;
+        background: url(../img/top.png);
+        position: fixed;
+        bottom: 99px;
+        right: 90px;
+        cursor: pointer;
+    }
+    .fish {
+        width: 85px;
+        height: 111px;
+        background: url(../img/fiiiish.png) no-repeat;
+        position: fixed;
+        left: 20px;
+        animation:box 3.5s infinite; 
+
+        @keyframes box{
+            0%{
+                top:350px;
+            }
+    
+            50%{
+                top:320px; 
+            }
+    
+            100%{
+                top:350px;
+            }
+        }
+    
+    }
+    .cell-download {
+        width: 62px;
+        height: 88px;
+        background: url(../img/fix-icon.png) no-repeat;
+        position: fixed;
+        top: 172px;
+        left: 20px;
+        cursor: pointer;
+
+        .cell-img {
+            width: 35px;
+            height: 43px;
+            background: url(../img/iphon.png)no-repeat;
+            margin: 20px auto;
+        }
+
+        &:hover,&:active,&:active {
+            background-position-x: calc(100% - 0px);
+
+            .cell-img {
+                background-position-x: calc(100% - 0px);
+            }
+
+        }
+    }
+    
+    .download-24 {
+        width: 62px;
+        height: 88px;
+        background: url(../img/fix-icon.png) no-repeat;
+        background-position-x: calc(100% - 0px);
+        position: fixed;
+        top: 172px;
+        right: 20px;
+        cursor: pointer;
+
+        .download-24-img {
+            width: 41px;
+            height: 35px;
+            background: url(../img/24-icon.png);
+            background-position-x: calc(100% - 0px);
+            margin: 23px auto;
+            cursor: pointer;
+        }
+
+        &:hover,&:active,&:active {
+            background-position-x: calc(100% + 63px);
+
+            .download-24-img {
+                background-position-x:calc(100% + 41px);
+            }
+
+        }
+    }
+
     .bg {
         width: 100%;
         height: 100%;

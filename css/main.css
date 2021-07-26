@@ -395,6 +395,91 @@ html body .fix-left {
   bottom: 0;
   left: 0;
 }
+html body .top {
+  width: 78px;
+  height: 97px;
+  background: url(../img/top.png);
+  position: fixed;
+  bottom: 99px;
+  right: 90px;
+  cursor: pointer;
+}
+html body .fish {
+  width: 85px;
+  height: 111px;
+  background: url(../img/fiiiish.png) no-repeat;
+  position: fixed;
+  left: 20px;
+  -webkit-animation: box 3.5s infinite;
+          animation: box 3.5s infinite;
+}
+@-webkit-keyframes box {
+  0% {
+    top: 350px;
+  }
+  50% {
+    top: 320px;
+  }
+  100% {
+    top: 350px;
+  }
+}
+@keyframes box {
+  0% {
+    top: 350px;
+  }
+  50% {
+    top: 320px;
+  }
+  100% {
+    top: 350px;
+  }
+}
+html body .cell-download {
+  width: 62px;
+  height: 88px;
+  background: url(../img/fix-icon.png) no-repeat;
+  position: fixed;
+  top: 172px;
+  left: 20px;
+  cursor: pointer;
+}
+html body .cell-download .cell-img {
+  width: 35px;
+  height: 43px;
+  background: url(../img/iphon.png) no-repeat;
+  margin: 20px auto;
+}
+html body .cell-download:hover, html body .cell-download:active, html body .cell-download:active {
+  background-position-x: calc(100% - 0px);
+}
+html body .cell-download:hover .cell-img, html body .cell-download:active .cell-img, html body .cell-download:active .cell-img {
+  background-position-x: calc(100% - 0px);
+}
+html body .download-24 {
+  width: 62px;
+  height: 88px;
+  background: url(../img/fix-icon.png) no-repeat;
+  background-position-x: calc(100% - 0px);
+  position: fixed;
+  top: 172px;
+  right: 20px;
+  cursor: pointer;
+}
+html body .download-24 .download-24-img {
+  width: 41px;
+  height: 35px;
+  background: url(../img/24-icon.png);
+  background-position-x: calc(100% - 0px);
+  margin: 23px auto;
+  cursor: pointer;
+}
+html body .download-24:hover, html body .download-24:active, html body .download-24:active {
+  background-position-x: calc(100% + 63px);
+}
+html body .download-24:hover .download-24-img, html body .download-24:active .download-24-img, html body .download-24:active .download-24-img {
+  background-position-x: calc(100% + 41px);
+}
 html body .bg {
   width: 100%;
   height: 100%;
