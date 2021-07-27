@@ -201,6 +201,38 @@ html body header article .top-2 .top-2-icon .icon {
   background: url(../img/top-icon.png) no-repeat;
   cursor: pointer;
 }
+html body header article .top-2 .top-2-icon .icon:hover, html body header article .top-2 .top-2-icon .icon:active, html body header article .top-2 .top-2-icon .icon.active {
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
 html body header article .top-2 .top-2-icon .line {
   background-position: calc(100% + 32px);
 }
@@ -632,6 +664,8 @@ html body .cell-download .cell-text {
 }
 html body .cell-download:hover, html body .cell-download:active, html body .cell-download:active {
   background-position-x: calc(100% - 0px);
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
 }
 html body .cell-download:hover .cell-img, html body .cell-download:active .cell-img, html body .cell-download:active .cell-img {
   background-position-x: calc(100% - 0px);
@@ -676,6 +710,8 @@ html body .download-24 .download-text {
 }
 html body .download-24:hover, html body .download-24:active, html body .download-24:active {
   background-position-x: calc(100% + 63px);
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
 }
 html body .download-24:hover .download-24-img, html body .download-24:active .download-24-img, html body .download-24:active .download-24-img {
   background-position-x: calc(100% + 41px);

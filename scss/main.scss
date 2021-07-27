@@ -202,15 +202,32 @@ html body {
                        height: 32px;
                        background: url(../img/top-icon.png) no-repeat;
                        cursor: pointer;
-                   }
+
+                       &:hover,&:active,&.active {
+
+                        animation: swing 1s ease;
+                        
+                            @keyframes swing {
+                                15% {
+                                    transform: translateY(5px);
+                                }
+                                30% {
+                                    transform: translateY(-5px);
+                                }
+                                50% {
+                                    transform: translateY(3px);
+                                }
+                            }
+                       }
+                    }
     
                    .line {
                       background-position: calc(100% + 32px);
-                   }
+                    }
     
                    .message {
                     background-position: calc(100% + 0px);
-                }
+                   }
                 }
             }
         }
@@ -630,6 +647,7 @@ html body {
 
         &:hover,&:active,&:active {
             background-position-x: calc(100% - 0px);
+            animation: swing 1s ease;
 
             .cell-img {
                 background-position-x: calc(100% - 0px);
@@ -679,6 +697,7 @@ html body {
 
         &:hover,&:active,&:active {
             background-position-x: calc(100% + 63px);
+            animation: swing 1s ease;
 
             .download-24-img {
                 background-position-x:calc(100% + 41px);
