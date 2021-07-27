@@ -272,7 +272,7 @@ html body main article .banner .swiper-pagination .swiper-pagination-bullet-acti
 html body main article .news {
   width: 1375px;
   height: 37px;
-  background: #0000005c;
+  background: #0000008c;
   border-radius: 50px;
   border: 2px solid #ffe249;
   margin-left: 20px;
@@ -476,13 +476,31 @@ html body footer .footer-top article ul {
   float: left;
 }
 html body footer .footer-top article ul li {
-  width: 116px;
-  height: auto;
   text-align: center;
   line-height: 57px;
   color: #d7075f;
   font-weight: bold;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html body footer .footer-top article ul li:after {
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  height: 3px;
+  background: #d7075f;
+}
+html body footer .footer-top article ul li:hover:after, html body footer .footer-top article ul li:active:after, html body footer .footer-top article ul li:active:after {
+  width: 100%;
+  left: 0;
 }
 html body footer .footer-top article span {
   position: absolute;
@@ -535,11 +553,19 @@ html body .fix-left {
 html body .top {
   width: 78px;
   height: 97px;
-  background: url(../img/top.png);
+  background: url(../img/top.png) no-repeat;
   position: fixed;
   bottom: 99px;
   right: 90px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html body .top:hover, html body .top:active, html body .top.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  width: 82px;
+  height: 101px;
 }
 html body .fish-left {
   width: 85px;
@@ -657,6 +683,37 @@ html body .download-24:hover .download-24-img, html body .download-24:active .do
 html body .download-24:hover .download-text, html body .download-24:active .download-text, html body .download-24:active .download-text {
   display: block;
   pointer-events: visible;
+}
+html body .bubble {
+  width: 54px;
+  height: 56px;
+  background: url(../img/bubbo.png) no-repeat;
+  position: fixed;
+  right: 48px;
+  -webkit-animation: box-2 2.5s infinite;
+          animation: box-2 2.5s infinite;
+}
+@-webkit-keyframes box-2 {
+  0% {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 140px;
+  }
+  100% {
+    bottom: 130px;
+  }
+}
+@keyframes box-2 {
+  0% {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 140px;
+  }
+  100% {
+    bottom: 130px;
+  }
 }
 html body .bg {
   width: 100%;

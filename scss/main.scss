@@ -284,7 +284,7 @@ html body {
             .news {
                 width: 1375px;
                 height: 37px;
-                background: #0000005c;
+                background: #0000008c;
                 border-radius: 50px;
                 border: 2px solid #ffe249;
                 margin-left: 20px;
@@ -469,13 +469,33 @@ html body {
                     float: left;
     
                     li {
-                        width: 116px;
-                        height: auto;
                         text-align: center;
                         line-height: 57px;
                         color: #d7075f;
                         font-weight: bold;
                         cursor: pointer;
+                        overflow:hidden;
+                        position: relative;
+                        transition: 0.3s;
+
+                        &:after {
+                            position: absolute;
+                            transition: 0.3s;
+                            content: '';
+                            width: 0;
+                            right: 0;
+                            left: auto;
+                            bottom: 0;
+                            height: 3px;
+                            background: #d7075f;
+                        }
+    
+                          &:hover,&:active,&:active {
+                            &:after {
+                               width: 100%;
+                               left: 0;
+                            }
+                          }
                     }
                 }
     
@@ -540,11 +560,18 @@ html body {
     .top {
         width: 78px;
         height: 97px;
-        background: url(../img/top.png);
+        background: url(../img/top.png) no-repeat;
         position: fixed;
         bottom: 99px;
         right: 90px;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover,&:active,&.active {
+            filter: brightness(1.1);
+            width: 82px;
+            height: 101px;
+        }
     }
     .fish-left {
         width: 85px;
@@ -662,6 +689,29 @@ html body {
                 pointer-events: visible;
             }
 
+        }
+    }
+
+    .bubble {
+        width: 54px;
+        height: 56px;
+        background: url(../img/bubbo.png) no-repeat;
+        position: fixed;
+        right: 48px;
+        animation:box-2 2.5s infinite; 
+
+        @keyframes box-2 {
+            0%{
+                bottom: 130px;
+            }
+    
+            50%{
+                bottom: 140px;
+            }
+    
+            100%{
+                bottom: 130px;
+            }
         }
     }
 
