@@ -312,6 +312,70 @@ html body main article .eight-main .eight-bg {
   height: 305px;
   background: url(../img/main-bg.png) no-repeat;
 }
+html body main article .eight-main .eight-bg .eight-img {
+  width: 315px;
+  height: 305px;
+  background: url(../img/eight-img.png);
+  position: absolute;
+  margin: -57px 0 0 0;
+}
+html body main article .eight-main .eight-bg .girl-2 {
+  background-position-x: calc(100% + 750px);
+}
+html body main article .eight-main .eight-bg .fish {
+  background-position-x: calc(100% + 385px);
+}
+html body main article .eight-main .eight-bg .tiger {
+  background-position-x: calc(100% + 35px);
+}
+html body main article .eight-main .eight-bg .ball {
+  background-position-y: calc(100% + 712px);
+}
+html body main article .eight-main .eight-bg .pe {
+  background-position-y: calc(100% + 712px);
+  background-position-x: calc(100% + 730px);
+}
+html body main article .eight-main .eight-bg .card {
+  background-position-y: calc(100% + 712px);
+  background-position-x: calc(100% + 385px);
+}
+html body main article .eight-main .eight-bg .card-2 {
+  background-position-y: calc(100% + 712px);
+  background-position-x: calc(100% + 35px);
+}
+html body main article .eight-main .eight-bg .eight-hover {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #000c;
+  border: 2px solid #ffffd6;
+  position: absolute;
+  margin: 82px 0 0px 38px;
+  cursor: pointer;
+}
+html body main article .eight-main .eight-bg .eight-hover .eight-hover-text {
+  width: 60px;
+  height: 70px;
+  color: #fff1be;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 41px auto;
+  text-align: center;
+  letter-spacing: 2px;
+}
+html body main article .eight-main .eight-bg p {
+  width: 264px;
+  height: 49px;
+  border-radius: 50px;
+  color: #3e0182;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 49px;
+  margin: 236px 0 0 5px;
+  position: absolute;
+  cursor: pointer;
+}
 html body footer {
   width: 100%;
   height: auto;
@@ -404,7 +468,7 @@ html body .top {
   right: 90px;
   cursor: pointer;
 }
-html body .fish {
+html body .fish-left {
   width: 85px;
   height: 111px;
   background: url(../img/fiiiish.png) no-repeat;
@@ -448,13 +512,34 @@ html body .cell-download .cell-img {
   width: 35px;
   height: 43px;
   background: url(../img/iphon.png) no-repeat;
-  margin: 20px auto;
+  margin: 20px 0 0 9px;
+}
+html body .cell-download .cell-text {
+  width: 35px;
+  height: 88px;
+  text-align: center;
+  line-height: 35px;
+  width: 20px;
+  height: 88px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin: -62px 0px 0px 61px;
+  pointer-events: none;
+  display: none;
 }
 html body .cell-download:hover, html body .cell-download:active, html body .cell-download:active {
   background-position-x: calc(100% - 0px);
 }
 html body .cell-download:hover .cell-img, html body .cell-download:active .cell-img, html body .cell-download:active .cell-img {
   background-position-x: calc(100% - 0px);
+}
+html body .cell-download:hover .cell-text, html body .cell-download:active .cell-text, html body .cell-download:active .cell-text {
+  display: block;
+  pointer-events: visible;
 }
 html body .download-24 {
   width: 62px;
@@ -474,11 +559,31 @@ html body .download-24 .download-24-img {
   margin: 23px auto;
   cursor: pointer;
 }
+html body .download-24 .download-text {
+  width: 35px;
+  height: 88px;
+  text-align: center;
+  line-height: 35px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 0px 0px -33px;
+  position: absolute;
+  pointer-events: none;
+  display: none;
+}
 html body .download-24:hover, html body .download-24:active, html body .download-24:active {
   background-position-x: calc(100% + 63px);
 }
 html body .download-24:hover .download-24-img, html body .download-24:active .download-24-img, html body .download-24:active .download-24-img {
   background-position-x: calc(100% + 41px);
+}
+html body .download-24:hover .download-text, html body .download-24:active .download-text, html body .download-24:active .download-text {
+  display: block;
+  pointer-events: visible;
 }
 html body .bg {
   width: 100%;
