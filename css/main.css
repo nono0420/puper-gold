@@ -316,6 +316,36 @@ html body main article .eight-main .eight-bg {
 html body main article .eight-main .eight-bg:hover, html body main article .eight-main .eight-bg:active, html body main article .eight-main .eight-bg.active {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+  -webkit-animation: jump2 0.3s linear 0s;
+          animation: jump2 0.3s linear 0s;
+}
+@-webkit-keyframes jump2 {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes jump2 {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
 html body main article .eight-main .eight-bg:hover .eight-hover, html body main article .eight-main .eight-bg:active .eight-hover, html body main article .eight-main .eight-bg.active .eight-hover {
   opacity: 1;
