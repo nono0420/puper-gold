@@ -44,14 +44,14 @@ html body header article .top-1 .top-1-box input {
 html body header article .top-1 .top-1-box .text-picture {
   width: 15px;
   height: 15px;
-  background: url(../img/input-icon-1.png) no-repeat;
+  background: url(../img/input-icon-1.webp) no-repeat;
   position: absolute;
   margin: -20px 0 0 16px;
 }
 html body header article .top-1 .top-1-box .password-picture {
   width: 15px;
   height: 15px;
-  background: url(../img/input-icon-2.png) no-repeat;
+  background: url(../img/input-icon-2.webp) no-repeat;
   position: absolute;
   margin: -20px 0 0 200px;
 }
@@ -139,7 +139,7 @@ html body header article .top-2 {
 html body header article .top-2 .logo {
   width: 153px;
   height: 51px;
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/logo.webp) no-repeat;
   background-size: 100%;
   margin: 3px 0 0 25px;
   float: left;
@@ -247,7 +247,7 @@ html body header article .top-2 .top-2-icon p {
 html body header article .top-2 .top-2-icon .icon {
   width: 30px;
   height: 31px;
-  background: url(../img/top-icon.png) no-repeat;
+  background: url(../img/top-icon.webp) no-repeat;
   background-size: cover;
   position: absolute;
   cursor: pointer;
@@ -289,15 +289,15 @@ html body main article .banner .swiper-slide {
      object-fit: cover;
 }
 html body main article .banner .swiper-slide.img-1 {
-  background: url(../img/banner-1.png) no-repeat center;
+  background: url(../img/banner-1.webp) no-repeat center;
   background-size: 100%;
 }
 html body main article .banner .swiper-slide.img-2 {
-  background: url(../img/banner-2.png) no-repeat center;
+  background: url(../img/banner-2.webp) no-repeat center;
   background-size: 100%;
 }
 html body main article .banner .swiper-slide.img-3 {
-  background: url(../img/banner-1.png) no-repeat center;
+  background: url(../img/banner-1.webp) no-repeat center;
   background-size: 100%;
 }
 html body main article .banner .swiper-pagination {
@@ -335,7 +335,7 @@ html body main article .news marquee {
 html body main article .news-icon {
   width: 47px;
   height: 46px;
-  background: url(../img/news-icon.png) no-repeat;
+  background: url(../img/news-icon.webp) no-repeat;
   z-index: 99;
   float: left;
   margin: -40px 0 0 0;
@@ -355,7 +355,7 @@ html body main article .eight-main {
 html body main article .eight-main .eight-bg {
   width: 315px;
   height: 305px;
-  background: url(../img/main-bg.png) no-repeat;
+  background: url(../img/main-bg.webp) no-repeat;
   cursor: pointer;
 }
 html body main article .eight-main .eight-bg:hover, html body main article .eight-main .eight-bg:active, html body main article .eight-main .eight-bg.active {
@@ -424,7 +424,7 @@ html body main article .eight-main .eight-bg:hover p, html body main article .ei
 html body main article .eight-main .eight-bg .eight-img {
   width: 315px;
   height: 305px;
-  background: url(../img/eight-img.png);
+  background: url(../img/eight-img.webp);
   position: absolute;
   margin: -57px 0 0 0;
   pointer-events: none;
@@ -501,7 +501,7 @@ html body footer {
 html body footer .footer-top {
   width: 100%;
   height: 57px;
-  background: url(../img/footer-1.png) no-repeat;
+  background: url(../img/footer-1.webp) no-repeat;
 }
 html body footer .footer-top article {
   width: 1400px;
@@ -582,7 +582,7 @@ html body footer .footer-bottom article .footer-text p {
 html body .fix-right {
   width: 223px;
   height: 259px;
-  background: url(../img/flix-right.png) no-repeat;
+  background: url(../img/flix-right.webp) no-repeat;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -590,7 +590,7 @@ html body .fix-right {
 html body .fix-left {
   width: 221px;
   height: 298px;
-  background: url(../img/flix-left.png) no-repeat;
+  background: url(../img/flix-left.webp) no-repeat;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -598,7 +598,7 @@ html body .fix-left {
 html body .top {
   width: 78px;
   height: 97px;
-  background: url(../img/top.png) no-repeat;
+  background: url(../img/top.webp) no-repeat;
   position: fixed;
   bottom: 99px;
   right: 90px;
@@ -615,7 +615,7 @@ html body .top:hover, html body .top:active, html body .top.active {
 html body .fish-left {
   width: 85px;
   height: 111px;
-  background: url(../img/fiiiish.png) no-repeat;
+  background: url(../img/fiiiish.webp) no-repeat;
   position: fixed;
   left: 20px;
   -webkit-animation: box 3.5s infinite;
@@ -646,7 +646,7 @@ html body .fish-left {
 html body .cell-download {
   width: 62px;
   height: 88px;
-  background: url(../img/fix-icon.png) no-repeat;
+  background: url(../img/fix-icon.webp) no-repeat;
   position: fixed;
   top: 172px;
   left: 20px;
@@ -655,7 +655,7 @@ html body .cell-download {
 html body .cell-download .cell-img {
   width: 35px;
   height: 43px;
-  background: url(../img/iphon.png) no-repeat;
+  background: url(../img/iphon.webp) no-repeat;
   margin: 20px 0 0 9px;
 }
 html body .cell-download .cell-text {
@@ -702,7 +702,7 @@ html body .cell-download .cell-box {
 html body .cell-download .cell-box .cell-iconbox {
   width: 62px;
   height: 63px;
-  background: url(../img/left-circle.png) no-repeat;
+  background: url(../img/left-circle.webp) no-repeat;
   margin-top: 10px;
   position: relative;
 }
@@ -728,7 +728,7 @@ html body .cell-download .cell-box .cell-iconbox p {
 html body .download-24 {
   width: 62px;
   height: 88px;
-  background: url(../img/fix-icon.png) no-repeat;
+  background: url(../img/fix-icon.webp) no-repeat;
   background-position-x: calc(100% - 0px);
   position: fixed;
   top: 172px;
@@ -738,7 +738,7 @@ html body .download-24 {
 html body .download-24 .download-24-img {
   width: 41px;
   height: 35px;
-  background: url(../img/24-icon.png);
+  background: url(../img/24-icon.webp);
   background-position-x: calc(100% - 0px);
   margin: 23px auto;
   cursor: pointer;
@@ -785,7 +785,7 @@ html body .download-24 .download-box {
 html body .download-24 .download-box .download-iconbox {
   width: 62px;
   height: 63px;
-  background: url(../img/left-circle.png) no-repeat;
+  background: url(../img/left-circle.webp) no-repeat;
   margin-top: 12px;
 }
 html body .download-24 .download-box .download-iconbox:hover, html body .download-24 .download-box .download-iconbox:active, html body .download-24 .download-box .download-iconbox.active {
@@ -800,7 +800,7 @@ html body .download-24 .download-box .download-iconbox:hover .download-line, htm
 html body .download-24 .download-box .download-iconbox .download-message {
   width: 31px;
   height: 31px;
-  background: url(../img/right-message.png) no-repeat;
+  background: url(../img/right-message.webp) no-repeat;
   background-size: 100%;
   margin: 13px 0 0 14px;
   position: absolute;
@@ -808,7 +808,7 @@ html body .download-24 .download-box .download-iconbox .download-message {
 html body .download-24 .download-box .download-iconbox .download-line {
   width: 33px;
   height: 31px;
-  background: url(../img/right-line.png) no-repeat;
+  background: url(../img/right-line.webp) no-repeat;
   background-size: 100%;
   margin: 14px 0 0 14px;
   position: absolute;
@@ -816,7 +816,7 @@ html body .download-24 .download-box .download-iconbox .download-line {
 html body .bubble {
   width: 54px;
   height: 56px;
-  background: url(../img/bubbo.png) no-repeat;
+  background: url(../img/bubbo.webp) no-repeat;
   position: fixed;
   right: 48px;
   -webkit-animation: box-2 2.5s infinite;
@@ -848,7 +848,7 @@ html body .bg {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../img/bg.png) no-repeat;
+  background: url(../img/bg.webp) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
