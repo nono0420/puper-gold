@@ -35,15 +35,33 @@
             <div class="top-2">
                 <div class="logo"></div>
                 <ul>
-                    <li>首頁</li>
-                    <li>體育賽事</li>
-                    <li>真人娛樂</li>
-                    <li>老虎機</li>
-                    <li>彩票</li>
-                    <li>捕魚機</li>
-                    <li>棋牌遊戲</li>
-                    <li>優惠</li>
-                    <li>VIP會員</li>
+                    <li class="active">
+                        <a href="./index.html">首頁</a>
+                    </li>
+                    <li>
+                        <a href="#">體育賽事</a>
+                    </li>
+                    <li> 
+                        <a href="#">真人娛樂</a>
+                    </li>
+                    <li>
+                        <a href="#">老虎機</a>
+                    </li>
+                    <li> 
+                        <a href="#">彩票</a>
+                    </li>
+                    <li>
+                        <a href="#">捕魚機</a>
+                    </li>
+                    <li> 
+                        <a href="#">棋牌遊戲</a>
+                    </li>
+                    <li>
+                        <a href="#">優惠</a>
+                    </li>
+                    <li> 
+                        <a href="#">VIP會員</a>
+                    </li>
                 </ul>
                 <div class="top-2-icon">
                     <div class=" icon cellphone"></div>
@@ -201,6 +219,15 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+
+    <script>
+          $(function(){
+            $('.top-2 li').click(function(){
+                $(this).addClass("active");
+                $(this).siblings().removeClass('active');
+            })
+         })
     </script>
 </body>
 </html>

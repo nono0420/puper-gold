@@ -177,12 +177,23 @@ html body header article .top-2 ul li:after {
   right: 0;
   left: auto;
   bottom: 0;
-  height: 3px;
+  height: 4px;
   background: #d7075f;
 }
-html body header article .top-2 ul li:hover:after, html body header article .top-2 ul li:active:after, html body header article .top-2 ul li:active:after {
+html body header article .top-2 ul li:hover:after, html body header article .top-2 ul li:active:after, html body header article .top-2 ul li.active:after {
   width: 100%;
   left: 0;
+}
+html body header article .top-2 ul li a {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 64px;
+  color: #d7075f;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html body header article .top-2 .top-2-icon {
   width: 125px;

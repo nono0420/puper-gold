@@ -170,21 +170,34 @@ html body {
 
                        &:after {
                         position: absolute;
-                        transition: .3s;
+                        transition: 0.3s;
                         content: '';
                         width: 0;
                         right: 0;
                         left: auto;
                         bottom: 0;
-                        height: 3px;
+                        height: 4px;
                         background: #d7075f;
                       }
 
-                      &:hover,&:active,&:active {
+                      &:hover,&:active,&.active{
+
                         &:after {
                            width: 100%;
                            left: 0;
                         }
+                      }
+
+
+                      a {
+                        font-size: 18px;
+                        text-align: center;
+                        text-decoration: none;
+                        line-height: 64px;
+                        color: #d7075f;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: 0.3s;
                       }
                     }
                 }
