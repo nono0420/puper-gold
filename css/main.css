@@ -651,6 +651,7 @@ html body .cell-download {
   top: 172px;
   left: 20px;
   cursor: pointer;
+  z-index: 10;
 }
 html body .cell-download .cell-img {
   width: 35px;
@@ -734,6 +735,7 @@ html body .download-24 {
   top: 172px;
   right: 20px;
   cursor: pointer;
+  z-index: 10;
 }
 html body .download-24 .download-24-img {
   width: 41px;

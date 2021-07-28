@@ -646,6 +646,7 @@ html body {
         top: 172px;
         left: 20px;
         cursor: pointer;
+        z-index: 10;
 
         .cell-img {
             width: 35px;
@@ -738,6 +739,7 @@ html body {
         top: 172px;
         right: 20px;
         cursor: pointer;
+        z-index: 10;
 
         .download-24-img {
             width: 41px;
