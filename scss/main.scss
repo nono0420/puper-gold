@@ -203,44 +203,56 @@ html body {
                 }
     
                 .top-2-icon {
-                    width: 125px;
+                    width: 105px;
                     height: 40px;
                     float: left;
-                    display: flex;
-                    justify-content: space-around;
-                    margin: 13px 0 0 33px;
-    
-                   .icon {
-                       width: 31px;
-                       height: 32px;
-                       background: url(../img/top-icon.png) no-repeat;
-                       cursor: pointer;
+                    margin: 13px 0 0 37px;
+                    cursor: pointer;
+                    font-weight: bold;
 
-                       &:hover,&:active,&.active {
+                    &:hover,&:active,&.active {
 
                         animation: swing 1s ease;
-                        
-                            @keyframes swing {
-                                15% {
-                                    transform: translateY(5px);
-                                }
-                                30% {
-                                    transform: translateY(-5px);
-                                }
-                                50% {
-                                    transform: translateY(3px);
-                                }
+
+                        @keyframes swing {
+                            15% {
+                                transform: translateY(5px);
                             }
-                       }
-                    }
-    
-                   .line {
-                      background-position: calc(100% + 32px);
-                    }
-    
-                   .message {
-                    background-position: calc(100% + 0px);
+                            30% {
+                                transform: translateY(-5px);
+                            }
+                            50% {
+                                transform: translateY(3px);
+                            }
+                        }
                    }
+            
+                    p {
+                       font-size: 17px;
+                       text-align: center;
+                       line-height: 40px;
+                       color: #d7075f;
+                       font-weight: bold;
+                       float: right;
+                       cursor: pointer;
+                    }
+    
+                   .icon {
+                       width: 30px;
+                       height: 31px;
+                       background: url(../img/top-icon.png) no-repeat;
+                       background-size: cover;
+                       position: absolute;
+                       cursor: pointer;
+                    }
+    
+                //    .line {
+                //       background-position: calc(100% + 32px);
+                //     }
+    
+                //    .message {
+                //     background-position: calc(100% + 0px);
+                //    }
                 }
             }
         }
@@ -671,6 +683,49 @@ html body {
                 pointer-events: visible;
             }
 
+            .cell-box {
+                display: block;
+                pointer-events: visible;
+            }
+
+        }
+
+        .cell-box {
+            width: 62px;
+            height: 281px;
+            margin-top: -5px;
+            position: absolute;
+            display: none;
+            pointer-events: none;
+
+            .cell-iconbox {
+                width: 62px;
+                height: 63px;
+                background: url(../img/left-circle.png) no-repeat;
+                margin-top: 10px;
+                position: relative;
+
+                &:hover,&:active,&.active {
+                    background-position-y: calc(100% - 1px);
+
+                    p {
+                        color: #fff;
+                    }
+                }
+
+                p {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #330077;
+                    text-align: center;
+                    padding-left: 12px;
+                    padding-top: 12px;
+                    line-height: 18px;
+                    transition: 0.3s;
+                }
+            }
         }
     }
     
@@ -721,6 +776,55 @@ html body {
                 pointer-events: visible;
             }
 
+            .download-box {
+                display: block;
+                pointer-events: visible;
+            }
+        }
+
+        .download-box {
+            width: 63px;
+            height: 160px;
+            position: absolute;
+            display: none;
+            pointer-events: none;
+
+            .download-iconbox {
+                width: 62px;
+                height: 63px;
+                background: url(../img/left-circle.png) no-repeat;
+                margin-top: 12px;
+
+                &:hover,&:active,&.active {
+                    background-position-y: calc(100% - 0px);
+
+                    .download-message {
+                        background-position-y: calc(100% - 0px);
+                    }
+
+                    .download-line {
+                        background-position-y: calc(100% - 0px);
+                    }
+                }
+
+                .download-message {
+                    width: 31px;
+                    height: 31px;
+                    background: url(../img/right-message.png) no-repeat;
+                    background-size: 100%;
+                    margin: 13px 0 0 14px;
+                    position: absolute;
+                }
+
+                .download-line {
+                    width: 33px;
+                    height: 31px;
+                    background: url(../img/right-line.png) no-repeat;
+                    background-size: 100%;
+                    margin: 14px 0 0 14px;
+                    position: absolute;
+                }
+            }
         }
     }
 

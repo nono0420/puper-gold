@@ -196,23 +196,14 @@ html body header article .top-2 ul li a {
   transition: 0.3s;
 }
 html body header article .top-2 .top-2-icon {
-  width: 125px;
+  width: 105px;
   height: 40px;
   float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 13px 0 0 33px;
-}
-html body header article .top-2 .top-2-icon .icon {
-  width: 31px;
-  height: 32px;
-  background: url(../img/top-icon.png) no-repeat;
+  margin: 13px 0 0 37px;
   cursor: pointer;
+  font-weight: bold;
 }
-html body header article .top-2 .top-2-icon .icon:hover, html body header article .top-2 .top-2-icon .icon:active, html body header article .top-2 .top-2-icon .icon.active {
+html body header article .top-2 .top-2-icon:hover, html body header article .top-2 .top-2-icon:active, html body header article .top-2 .top-2-icon.active {
   -webkit-animation: swing 1s ease;
           animation: swing 1s ease;
 }
@@ -244,11 +235,22 @@ html body header article .top-2 .top-2-icon .icon:hover, html body header articl
             transform: translateY(3px);
   }
 }
-html body header article .top-2 .top-2-icon .line {
-  background-position: calc(100% + 32px);
+html body header article .top-2 .top-2-icon p {
+  font-size: 17px;
+  text-align: center;
+  line-height: 40px;
+  color: #d7075f;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
 }
-html body header article .top-2 .top-2-icon .message {
-  background-position: calc(100% + 0px);
+html body header article .top-2 .top-2-icon .icon {
+  width: 30px;
+  height: 31px;
+  background: url(../img/top-icon.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  cursor: pointer;
 }
 html body main {
   width: 100%;
@@ -685,6 +687,44 @@ html body .cell-download:hover .cell-text, html body .cell-download:active .cell
   display: block;
   pointer-events: visible;
 }
+html body .cell-download:hover .cell-box, html body .cell-download:active .cell-box, html body .cell-download:active .cell-box {
+  display: block;
+  pointer-events: visible;
+}
+html body .cell-download .cell-box {
+  width: 62px;
+  height: 281px;
+  margin-top: -5px;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+html body .cell-download .cell-box .cell-iconbox {
+  width: 62px;
+  height: 63px;
+  background: url(../img/left-circle.png) no-repeat;
+  margin-top: 10px;
+  position: relative;
+}
+html body .cell-download .cell-box .cell-iconbox:hover, html body .cell-download .cell-box .cell-iconbox:active, html body .cell-download .cell-box .cell-iconbox.active {
+  background-position-y: calc(100% - 1px);
+}
+html body .cell-download .cell-box .cell-iconbox:hover p, html body .cell-download .cell-box .cell-iconbox:active p, html body .cell-download .cell-box .cell-iconbox.active p {
+  color: #fff;
+}
+html body .cell-download .cell-box .cell-iconbox p {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #330077;
+  text-align: center;
+  padding-left: 12px;
+  padding-top: 12px;
+  line-height: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 html body .download-24 {
   width: 62px;
   height: 88px;
@@ -730,6 +770,48 @@ html body .download-24:hover .download-24-img, html body .download-24:active .do
 html body .download-24:hover .download-text, html body .download-24:active .download-text, html body .download-24:active .download-text {
   display: block;
   pointer-events: visible;
+}
+html body .download-24:hover .download-box, html body .download-24:active .download-box, html body .download-24:active .download-box {
+  display: block;
+  pointer-events: visible;
+}
+html body .download-24 .download-box {
+  width: 63px;
+  height: 160px;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+html body .download-24 .download-box .download-iconbox {
+  width: 62px;
+  height: 63px;
+  background: url(../img/left-circle.png) no-repeat;
+  margin-top: 12px;
+}
+html body .download-24 .download-box .download-iconbox:hover, html body .download-24 .download-box .download-iconbox:active, html body .download-24 .download-box .download-iconbox.active {
+  background-position-y: calc(100% - 0px);
+}
+html body .download-24 .download-box .download-iconbox:hover .download-message, html body .download-24 .download-box .download-iconbox:active .download-message, html body .download-24 .download-box .download-iconbox.active .download-message {
+  background-position-y: calc(100% - 0px);
+}
+html body .download-24 .download-box .download-iconbox:hover .download-line, html body .download-24 .download-box .download-iconbox:active .download-line, html body .download-24 .download-box .download-iconbox.active .download-line {
+  background-position-y: calc(100% - 0px);
+}
+html body .download-24 .download-box .download-iconbox .download-message {
+  width: 31px;
+  height: 31px;
+  background: url(../img/right-message.png) no-repeat;
+  background-size: 100%;
+  margin: 13px 0 0 14px;
+  position: absolute;
+}
+html body .download-24 .download-box .download-iconbox .download-line {
+  width: 33px;
+  height: 31px;
+  background: url(../img/right-line.png) no-repeat;
+  background-size: 100%;
+  margin: 14px 0 0 14px;
+  position: absolute;
 }
 html body .bubble {
   width: 54px;
