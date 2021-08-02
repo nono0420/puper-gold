@@ -6,6 +6,206 @@ html body {
     position: relative;
     background: #ae35e9;
 
+    .sign-bg {     //登入窗
+        width: 100%;
+        height: 100%;
+        background-color: #000000ba;
+        z-index: 999;
+        position: absolute;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .signin-box {
+            width: 360px;
+            height: 290px;
+            background: linear-gradient(to bottom, #de53ff 0%,#6403cf 100%);
+            border: 3px solid #fff1be;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 200px;
+
+            .signin-cross {
+                width: 61px;
+                height: 61px;
+                border-radius: 50%;
+                background: url(../img/cross.png) no-repeat;
+                background-size: 100%;
+                left: 330px;
+                top: -30px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover,&:active,&.active {
+                    transform: rotate(90deg);
+                }
+            }
+
+            p {
+                font-size: 30px;
+                color: #fff;
+                font-weight: bold;
+                position: absolute;
+                margin: auto;
+                margin: -35px 0 0 150px;
+            }
+
+            input {
+                width: 165px;
+                height: 35px;
+                border-radius: 20px;
+                padding-left: 92px;
+                color: #4c3367;
+                background: #fff;
+                border: none;
+                outline: none;
+                box-shadow: 1px 3px 4px #000000e0;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 12px 0 0px 51px;
+            }
+
+            input::-webkit-input-placeholder {
+                color: #4c3367;
+            }
+
+            .goto-regidtertd-box {
+                width: 182px;
+                height: 20px;
+                display: inline-flex;
+                position: relative;
+                margin: 10px 0 0 58px;
+
+                div {
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+                .goto-registered {
+                    font-size: 14px;
+                    color: #12ff00;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+
+            .goto-forget {
+                font-size: 14px;
+                color: #fff;
+                text-decoration: none;
+
+                &:hover,&:active,&.active {
+                    color: #12ff00;
+                }
+            }
+
+            button {
+                width: 166px;
+                height: 47px;
+                outline: none;
+                border: none;
+                border-radius: 50px;
+                background: url(../img/signbox-sign.png) no-repeat;
+                background-size: 100%;
+                font-size: 22px;
+                color: #d7075f;
+                font-weight: bold;
+                line-height: 47px;
+                margin: 23px 0 0 99px;
+                cursor: pointer;
+                transition: 0.1s;
+
+                &:hover,&:active,&.active {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .registered-bg {  //註冊窗
+        width: 100%;
+        height: 100%;
+        background: #000000ba;
+        z-index: 999;
+        position: absolute;
+
+        .registered-box {
+            width: 672px;
+            height: 420px;
+            background: linear-gradient(to bottom, #de53ff 0%,#6403cf 100%);
+            border: 3px solid #fff1be;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 170px;
+
+            .registered-cross {
+                width: 61px;
+                height: 61px;
+                border-radius: 50%;
+                background: url(../img/cross.png) no-repeat;
+                background-size: 100%;
+                left: 33px;
+                float: right;
+                top: -65px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover,&:active,&.active {
+                    transform: rotate(90deg);
+                }
+            }
+
+            p {
+                font-size: 30px;
+                color: #fff;
+                font-weight: bold;
+                position: absolute;
+                margin: auto;
+                margin: 43px 0 0 302px;
+            }
+
+            span {
+                width: 33px;
+                height: 33px;
+                background: url(../img/box-icon-1.png);
+                background-size: 100%;
+                position: absolute;
+                margin: 42px 0 0 263px;
+            }
+            
+            .registered-input-box {
+
+                width: 603px;
+                height: 152px;
+                margin: auto;
+                margin-top: 100px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                input {
+                    width: 195px;
+                    height: 35px;
+                    border-radius: 20px;
+                    padding-left: 15px;
+                    color: #4c3367;
+                    background: #fff;
+                    border: none;
+                    outline: none;
+                    box-shadow: 1px 3px 4px #000000e0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 12px 0 0px 51px;
+                    position: relative;
+                }
+            }
+        }
+    }
+
     header {
         width: 100%;
         height: 108px;

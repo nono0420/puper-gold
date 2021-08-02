@@ -10,6 +10,38 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- 登入窗 -->
+    <div class="sign-bg">
+        <div class="signin-box">
+            <div class="signin-cross"></div>
+            <p>登入</p>
+            <input type="text"placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <div class="goto-regidtertd-box">
+                <div>還沒有帳號? </div>
+                <a href="#" class="goto-registered"> 立即註冊</a>
+            </div>
+            <a href="#" class="goto-forget"> 忘記密碼?</a>
+            <button>登入</button>
+        </div>
+    </div>
+    <!-- 註冊窗 -->
+    <div class="registered-bg">
+        <div class="registered-box">
+            <div class="registered-cross"></div>
+            <span></span>
+            <p>註冊</p>
+            <div class="registered-input-box">
+                <input type="text"placeholder="請輸入您的姓名">
+                <input type="text"placeholder="請輸入密碼">
+                <input type="text"placeholder="請輸入手機號碼">
+                <input type="text"placeholder="請輸入手機號碼">
+                <input type="text"placeholder="請輸入手機號碼">
+                <input type="text"placeholder="請輸入手機號碼">
+            </div>
+        </div>
+    </div>
+
     <header>
         <article>
             <div class="top-1">
@@ -212,8 +244,9 @@
             </div>
         </div>
     </div>
+    <!-- 泡泡 -->
     <div class="bubble"></div>
-
+    <!-- 背景 -->
     <div class="bg"></div>
 
 
@@ -248,5 +281,16 @@
             })
          })
     </script>
+
+    <!-- <script>
+        $(function(){
+            $('.sign-in').click(function() {
+                $('.sign-bg').addClass('display');
+            })
+            $('.signin-cross').click(function() {
+                $('.sign-bg').removeClass('display');
+            })
+        })
+    </script> -->
 </body>
 </html>
