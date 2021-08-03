@@ -26,7 +26,7 @@ html body .sign-bg .signin-box {
   border: 3px solid #fff1be;
   border-radius: 20px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 110px;
 }
 html body .sign-bg .signin-box .signin-cross {
   width: 61px;
@@ -56,6 +56,7 @@ html body .sign-bg .signin-box p {
 html body .sign-bg .signin-box input {
   width: 165px;
   height: 35px;
+  line-height: 35px;
   border-radius: 20px;
   padding-left: 92px;
   color: #4c3367;
@@ -138,7 +139,7 @@ html body .registered-bg .registered-box {
   border: 3px solid #fff1be;
   border-radius: 20px;
   margin: auto;
-  margin-top: 170px;
+  margin-top: 110px;
 }
 html body .registered-bg .registered-box .registered-cross {
   width: 61px;
@@ -190,6 +191,7 @@ html body .registered-bg .registered-box .registered-input-box {
 html body .registered-bg .registered-box .registered-input-box input {
   width: 203px;
   height: 35px;
+  line-height: 35px;
   border-radius: 20px;
   padding-left: 15px;
   color: #4c3367;
@@ -198,7 +200,7 @@ html body .registered-bg .registered-box .registered-input-box input {
   outline: none;
   -webkit-box-shadow: 1px 3px 4px #000000e0;
           box-shadow: 1px 3px 4px #000000e0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin: 12px 0 0px 51px;
   position: relative;
@@ -214,10 +216,13 @@ html body .registered-bg .registered-box input {
   outline: none;
   -webkit-box-shadow: 1px 3px 4px #000000e0;
           box-shadow: 1px 3px 4px #000000e0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin: 12px 0 0px 88px;
   position: relative;
+}
+html body .registered-bg .registered-box input::-webkit-input-placeholder {
+  color: #4c3367;
 }
 html body .registered-bg .registered-box .registered-input-text {
   width: 632px;
@@ -247,19 +252,40 @@ html body .registered-bg .registered-box .agree-box {
   margin: 48px 0 0 115px;
   text-align: center;
 }
-html body .registered-bg .registered-box .agree-box input[type=checkbox] {
+html body .registered-bg .registered-box .agree-box label {
   width: 16px;
   height: 16px;
-  cursor: pointer;
-  float: left;
-  margin: 8px 0px 0 121px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  position: absolute;
+  display: contents;
 }
-html body .registered-bg .registered-box .agree-box input[type=checkbox]:after {
-  color: #000;
+html body .registered-bg .registered-box .agree-box label input[type=checkbox] {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 15px;
+  height: 12px;
+  position: relative;
+}
+html body .registered-bg .registered-box .agree-box label input[type=checkbox]:after {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  content: " ";
+  color: #6c08d2;
+  display: inline-block;
+  visibility: visible;
+  padding: 0px 2px;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #DDDDDD;
+}
+html body .registered-bg .registered-box .agree-box label input[type=checkbox]:checked:after {
+  content: "✔";
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffeda4;
+  padding-bottom: 2px;
 }
 html body .registered-bg .registered-box .agree-box .agree-text {
   font-size: 14px;
@@ -417,7 +443,7 @@ html body header article .top-1 .top-1-box .chinese-select select option {
   color: #000;
 }
 html body header article .top-2 {
-  width: 1400px;
+  width: 100%;
   height: 64px;
   background-color: #fff;
   border-radius: 50px;
@@ -482,15 +508,16 @@ html body header article .top-2 ul li a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-html body header article .top-2 .top-2-icon {
+html body header article .top-2 ul .top-2-icon {
   width: 105px;
   height: 40px;
   float: left;
-  margin: 13px 0 0 37px;
+  margin: 13px 0 0 1230px;
+  position: absolute;
   cursor: pointer;
   font-weight: bold;
 }
-html body header article .top-2 .top-2-icon:hover, html body header article .top-2 .top-2-icon:active, html body header article .top-2 .top-2-icon.active {
+html body header article .top-2 ul .top-2-icon:hover, html body header article .top-2 ul .top-2-icon:active, html body header article .top-2 ul .top-2-icon.active {
   -webkit-animation: swing 1s ease;
           animation: swing 1s ease;
 }
@@ -522,7 +549,7 @@ html body header article .top-2 .top-2-icon:hover, html body header article .top
             transform: translateY(3px);
   }
 }
-html body header article .top-2 .top-2-icon p {
+html body header article .top-2 ul .top-2-icon p {
   font-size: 17px;
   text-align: center;
   line-height: 40px;
@@ -531,7 +558,7 @@ html body header article .top-2 .top-2-icon p {
   float: right;
   cursor: pointer;
 }
-html body header article .top-2 .top-2-icon .icon {
+html body header article .top-2 ul .top-2-icon .icon {
   width: 30px;
   height: 31px;
   background: url(../img/top-icon.webp) no-repeat;
@@ -874,6 +901,20 @@ html body .fix-right {
   bottom: 0;
   right: 0;
 }
+@media (max-width: 1400px) {
+  html body .fix-right {
+    width: 200px;
+    height: 226px;
+    background-size: 100%;
+  }
+}
+@media (max-width: 1330px) {
+  html body .fix-right {
+    width: 180px;
+    height: 180px;
+    background-size: 100%;
+  }
+}
 html body .fix-left {
   width: 221px;
   height: 298px;
@@ -881,6 +922,20 @@ html body .fix-left {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+@media (max-width: 1440px) {
+  html body .fix-left {
+    width: 200px;
+    height: 226px;
+    background-size: 100%;
+  }
+}
+@media (max-width: 1330px) {
+  html body .fix-left {
+    width: 180px;
+    height: 180px;
+    background-size: 100%;
+  }
 }
 html body .top {
   width: 78px;

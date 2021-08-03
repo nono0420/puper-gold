@@ -25,7 +25,7 @@ html body {
             border: 3px solid #fff1be;
             border-radius: 20px;
             margin: auto;
-            margin-top: 200px;
+            margin-top: 110px;
 
             .signin-cross {
                 width: 61px;
@@ -56,6 +56,7 @@ html body {
             input {
                 width: 165px;
                 height: 35px;
+                line-height: 35px;
                 border-radius: 20px;
                 padding-left: 92px;
                 color: #4c3367;
@@ -144,7 +145,7 @@ html body {
             border: 3px solid #fff1be;
             border-radius: 20px;
             margin: auto;
-            margin-top: 170px;
+            margin-top: 110px;
 
             .registered-cross {
                 width: 61px;
@@ -194,6 +195,7 @@ html body {
                 input {
                     width: 203px;
                     height: 35px;
+                    line-height: 35px;
                     border-radius: 20px;
                     padding-left: 15px;
                     color: #4c3367;
@@ -201,7 +203,7 @@ html body {
                     border: none;
                     outline: none;
                     box-shadow: 1px 3px 4px #000000e0;
-                    font-size: 16px;
+                    font-size: 15px;
                     font-weight: bold;
                     margin: 12px 0 0px 51px;
                     position: relative;
@@ -218,10 +220,14 @@ html body {
                 border: none;
                 outline: none;
                 box-shadow: 1px 3px 4px #000000e0;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: bold;
                 margin: 12px 0 0px 88px;
                 position: relative;
+            }
+
+            input::-webkit-input-placeholder {
+                color: #4c3367;
             }
 
             .registered-input-text {
@@ -249,19 +255,45 @@ html body {
                margin: 48px 0 0 115px;
                text-align: center;
 
-               input[type=checkbox] {
-                   width: 16px;
-                   height: 16px;
-                   cursor: pointer;
-                   float: left;
-                   margin: 8px 0px 0 121px;
-                   user-select: none;
-               }
+                label {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    display: contents;
 
-               input[type=checkbox]:after {
-                color: #000;
-               }
-
+                    input[type=checkbox] {
+                        margin-right: 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        width: 15px;
+                        height: 12px;
+                        position: relative;
+                    }
+                    
+                    input[type=checkbox]:after {
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        top: 0;
+                        content: " ";
+                        color: #6c08d2;
+                        display: inline-block;
+                        visibility: visible;
+                        padding: 0px 2px;
+                        border-radius: 3px;
+                        background:#fff;
+                        border:1px solid #DDDDDD;
+                    }
+                    
+                    input[type=checkbox]:checked:after {
+                        content: "✔";
+                        font-size: 14px;
+                        font-weight:600;
+                        background-color: #ffeda4;
+                        padding-bottom: 2px;
+                    }
+                }  
+  
                .agree-text {
                 font-size: 14px;
                 color: #fff;
@@ -426,7 +458,7 @@ html body {
             }
             
             .top-2 {
-                width: 1400px;
+                width: 100%;
                 height: 64px;
                 background-color: #fff;
                 border-radius: 50px;
@@ -492,59 +524,52 @@ html body {
                         transition: 0.3s;
                       }
                     }
-                }
+
+                    .top-2-icon {
+                        width: 105px;
+                        height: 40px;
+                        float: left;
+                        margin: 13px 0 0 1230px;
+                        position: absolute;
+                        cursor: pointer;
+                        font-weight: bold;
     
-                .top-2-icon {
-                    width: 105px;
-                    height: 40px;
-                    float: left;
-                    margin: 13px 0 0 37px;
-                    cursor: pointer;
-                    font-weight: bold;
-
-                    &:hover,&:active,&.active {
-
-                        animation: swing 1s ease;
-
-                        @keyframes swing {
-                            15% {
-                                transform: translateY(5px);
+                        &:hover,&:active,&.active {
+    
+                            animation: swing 1s ease;
+    
+                            @keyframes swing {
+                                15% {
+                                    transform: translateY(5px);
+                                }
+                                30% {
+                                    transform: translateY(-5px);
+                                }
+                                50% {
+                                    transform: translateY(3px);
+                                }
                             }
-                            30% {
-                                transform: translateY(-5px);
-                            }
-                            50% {
-                                transform: translateY(3px);
-                            }
+                       }
+                
+                        p {
+                           font-size: 17px;
+                           text-align: center;
+                           line-height: 40px;
+                           color: #d7075f;
+                           font-weight: bold;
+                           float: right;
+                           cursor: pointer;
                         }
-                   }
-            
-                    p {
-                       font-size: 17px;
-                       text-align: center;
-                       line-height: 40px;
-                       color: #d7075f;
-                       font-weight: bold;
-                       float: right;
-                       cursor: pointer;
+        
+                       .icon {
+                           width: 30px;
+                           height: 31px;
+                           background: url(../img/top-icon.webp) no-repeat;
+                           background-size: cover;
+                           position: absolute;
+                           cursor: pointer;
+                        }
                     }
-    
-                   .icon {
-                       width: 30px;
-                       height: 31px;
-                       background: url(../img/top-icon.webp) no-repeat;
-                       background-size: cover;
-                       position: absolute;
-                       cursor: pointer;
-                    }
-    
-                //    .line {
-                //       background-position: calc(100% + 32px);
-                //     }
-    
-                //    .message {
-                //     background-position: calc(100% + 0px);
-                //    }
                 }
             }
         }
@@ -880,6 +905,18 @@ html body {
         position: fixed;
         bottom: 0;
         right: 0;
+
+        @media (max-width:1400px)  {
+         width: 200px;
+         height: 226px;
+         background-size: 100%;
+        }
+
+        @media (max-width:1330px)  {
+            width: 180px;
+            height: 180px;
+            background-size: 100%;
+        }
     }
 
     .fix-left {
@@ -889,6 +926,18 @@ html body {
         position: fixed;
         bottom: 0;
         left: 0;
+
+        @media (max-width:1440px)  {
+            width: 200px;
+            height: 226px;
+            background-size: 100%;
+           }
+   
+           @media (max-width:1330px)  {
+               width: 180px;
+               height: 180px;
+               background-size: 100%;
+           }
     }
 
     .top {

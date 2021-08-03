@@ -50,7 +50,9 @@
                 <div class="text">手機驗證碼</div>
             </div>
             <div class="agree-box">
-                <input type="checkbox" value="" />
+                <label>
+                    <input name="checkbox" class="checkbox" type="checkbox"/>
+                </label>
                 <a href="#" class="agree-text">
                     同意遵守<h5>隱私條款</h5>相關規定</a>
             </div>
@@ -110,11 +112,12 @@
                     <li> 
                         <a href="#">VIP會員</a>
                     </li>
-                </ul>
-                <div class="top-2-icon">
+                    <div class="top-2-icon">
                     <p>線上客服</p>
                     <div class=" icon cellphone"></div>
                 </div>
+                </ul>
+                
             </div>
         </article>
     </header>
@@ -322,6 +325,19 @@
                 $('.registered-bg').removeClass('display');
             })
         })
+    </script>
+
+    <script>
+         $(function(){
+            var name = $('header');
+            var name2 = window.innerHeight/window.innerWidth;
+            name.css("height/width", (String(name2 - 100) + "px"));
+          $(window).resize(function () {
+                var name = $('header');
+                var name2 = window.innerHeight/window.innerWidth;
+                name.css("height/width", (String(name2 - 100) + "px"));
+          });
+    });
     </script>
 </body>
 </html>
