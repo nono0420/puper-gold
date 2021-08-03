@@ -125,6 +125,10 @@ html body .registered-bg {
   background: #000000ba;
   z-index: 999;
   position: absolute;
+  display: none;
+}
+html body .registered-bg.display {
+  display: block;
 }
 html body .registered-bg .registered-box {
   width: 672px;
@@ -144,7 +148,7 @@ html body .registered-bg .registered-box .registered-cross {
   background-size: 100%;
   left: 33px;
   float: right;
-  top: -65px;
+  top: -35px;
   position: relative;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -155,12 +159,12 @@ html body .registered-bg .registered-box .registered-cross:hover, html body .reg
           transform: rotate(90deg);
 }
 html body .registered-bg .registered-box p {
-  font-size: 30px;
+  font-size: 32px;
   color: #fff;
   font-weight: bold;
   position: absolute;
   margin: auto;
-  margin: 43px 0 0 302px;
+  margin: 35px 0 0 319px;
 }
 html body .registered-bg .registered-box span {
   width: 33px;
@@ -168,24 +172,23 @@ html body .registered-bg .registered-box span {
   background: url(../img/box-icon-1.png);
   background-size: 100%;
   position: absolute;
-  margin: 42px 0 0 263px;
+  margin: 34px 0 0 280px;
 }
 html body .registered-bg .registered-box .registered-input-box {
-  width: 603px;
+  width: 650px;
   height: 152px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 html body .registered-bg .registered-box .registered-input-box input {
-  width: 195px;
+  width: 203px;
   height: 35px;
   border-radius: 20px;
   padding-left: 15px;
@@ -199,6 +202,97 @@ html body .registered-bg .registered-box .registered-input-box input {
   font-weight: bold;
   margin: 12px 0 0px 51px;
   position: relative;
+}
+html body .registered-bg .registered-box input {
+  width: 530px;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;
+  color: #4c3367;
+  background: #fff;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 1px 3px 4px #000000e0;
+          box-shadow: 1px 3px 4px #000000e0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 12px 0 0px 88px;
+  position: relative;
+}
+html body .registered-bg .registered-box .registered-input-text {
+  width: 632px;
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -176px;
+  margin-left: 13px;
+}
+html body .registered-bg .registered-box .registered-input-text .text {
+  width: 307px;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+html body .registered-bg .registered-box .agree-box {
+  width: 333px;
+  height: 32px;
+  line-height: 32px;
+  margin: 48px 0 0 115px;
+  text-align: center;
+}
+html body .registered-bg .registered-box .agree-box input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  float: left;
+  margin: 8px 0px 0 121px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .registered-bg .registered-box .agree-box input[type=checkbox]:after {
+  color: #000;
+}
+html body .registered-bg .registered-box .agree-box .agree-text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+html body .registered-bg .registered-box .agree-box .agree-text h5 {
+  color: #00ff0c;
+}
+html body .registered-bg .registered-box button {
+  width: 166px;
+  height: 47px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background: url(../img/signbox-sign.png) no-repeat;
+  background-size: 100%;
+  font-size: 22px;
+  color: #d7075f;
+  font-weight: bold;
+  line-height: 47px;
+  margin: 2px 0 0 256px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+html body .registered-bg .registered-box button:hover, html body .registered-bg .registered-box button:active, html body .registered-bg .registered-box button.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 html body header {
   width: 100%;

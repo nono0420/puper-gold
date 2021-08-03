@@ -34,11 +34,27 @@
             <div class="registered-input-box">
                 <input type="text"placeholder="請輸入您的姓名">
                 <input type="text"placeholder="請輸入帳號">
-                <input type="text"placeholder="請輸入密碼">
-                <input type="text"placeholder="請確認密碼">
+                <input type="password"placeholder="請輸入密碼">
+                <input type="password"placeholder="請確認密碼">
                 <input type="text"placeholder="請輸入手機號碼">
                 <input type="text"placeholder="請輸入驗證碼">
             </div>
+            <input type="text"placeholder="電子信箱">
+            <div class="registered-input-text">
+                <div class="text">姓名/暱稱</div>
+                <div class="text">請輸入密碼</div>
+                <div class="text">手機號碼</div>
+                <div class="text">電子信箱</div>
+                <div class="text">請輸入帳號</div>
+                <div class="text">確認密碼</div>
+                <div class="text">手機驗證碼</div>
+            </div>
+            <div class="agree-box">
+                <input type="checkbox" value="" />
+                <a href="#" class="agree-text">
+                    同意遵守<h5>隱私條款</h5>相關規定</a>
+            </div>
+            <button>註冊</button>
         </div>
     </div>
 
@@ -282,15 +298,30 @@
          })
     </script>
 
-    <!-- <script>
+    <script>
         $(function(){
-            $('.sign-in').click(function() {
+            $('.sign-in').click(function(){
                 $('.sign-bg').addClass('display');
             })
-            $('.signin-cross').click(function() {
+            $('.signin-cross').click(function(){
+                $('.sign-bg').removeClass('display');
+            })
+            $('.goto-regidtertd-box').click(function(){
+                $('.registered-bg').addClass('display');
                 $('.sign-bg').removeClass('display');
             })
         })
-    </script> -->
+    </script>
+
+    <script>
+         $(function(){
+            $('.registered').click(function(){
+                $('.registered-bg').addClass('display');
+            })
+            $('.registered-cross').click(function(){
+                $('.registered-bg').removeClass('display');
+            })
+        })
+    </script>
 </body>
 </html>
