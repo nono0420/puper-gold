@@ -176,10 +176,11 @@ html body .registered-bg .registered-box span {
   margin: 34px 0 0 280px;
 }
 html body .registered-bg .registered-box .registered-input-box {
-  width: 650px;
+  width: 633px;
   height: 152px;
   margin: auto;
   margin-top: 86px;
+  margin-left: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +207,7 @@ html body .registered-bg .registered-box .registered-input-box input {
   position: relative;
 }
 html body .registered-bg .registered-box input {
-  width: 530px;
+  width: 520px;
   height: 35px;
   border-radius: 20px;
   padding-left: 15px;
@@ -218,14 +219,14 @@ html body .registered-bg .registered-box input {
           box-shadow: 1px 3px 4px #000000e0;
   font-size: 15px;
   font-weight: bold;
-  margin: 12px 0 0px 88px;
+  margin: 12px 0 0px 106px;
   position: relative;
 }
 html body .registered-bg .registered-box input::-webkit-input-placeholder {
   color: #4c3367;
 }
 html body .registered-bg .registered-box .registered-input-text {
-  width: 632px;
+  width: 620px;
   height: 148px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,15 +236,15 @@ html body .registered-bg .registered-box .registered-input-text {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -176px;
-  margin-left: 13px;
+  margin-top: -177px;
+  margin-left: 27px;
 }
 html body .registered-bg .registered-box .registered-input-text .text {
   width: 307px;
   height: 50px;
   color: #fff;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
 }
 html body .registered-bg .registered-box .agree-box {
   width: 333px;
@@ -268,7 +269,7 @@ html body .registered-bg .registered-box .agree-box label input[type=checkbox] {
 }
 html body .registered-bg .registered-box .agree-box label input[type=checkbox]:after {
   position: absolute;
-  width: 14px;
+  width: 12px;
   height: 14px;
   top: 0;
   content: " ";
@@ -279,13 +280,15 @@ html body .registered-bg .registered-box .agree-box label input[type=checkbox]:a
   border-radius: 3px;
   background: #fff;
   border: 1px solid #DDDDDD;
+  margin-top: -1px;
 }
 html body .registered-bg .registered-box .agree-box label input[type=checkbox]:checked:after {
   content: "✔";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   background-color: #ffeda4;
   padding-bottom: 2px;
+  padding-left: 5px;
 }
 html body .registered-bg .registered-box .agree-box .agree-text {
   font-size: 14px;
