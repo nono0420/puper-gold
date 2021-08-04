@@ -242,6 +242,10 @@ html body .registered-bg .registered-box .get {
   position: relative;
   margin: -35px 0 0 473px;
 }
+html body .registered-bg .registered-box .get:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
 html body .registered-bg .registered-box .registered-input-text {
   width: 620px;
   height: 148px;

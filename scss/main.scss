@@ -246,6 +246,10 @@ html body {
                 cursor: pointer;
                 position: relative;
                 margin: -35px 0 0 473px;
+
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
 
             .registered-input-text {
