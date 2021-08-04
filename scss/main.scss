@@ -132,7 +132,7 @@ html body {
         background: #000000ba;
         z-index: 999;
         position: absolute;
-        display: none;
+        // display: none;
 
         &.display {
             display: block;
@@ -229,6 +229,23 @@ html body {
 
             input::-webkit-input-placeholder {
                 color: #4c3367;
+            }
+
+            .get {
+                width: 100px;
+                height: 28px;
+                background: linear-gradient(to bottom, #ffbb45 0%,#fffaa8 100%);
+                border-radius: 15px;
+                text-decoration: none;
+                line-height: 28px;
+                font-weight: bold;
+                font-size: 13px;
+                text-align: center;
+                color: #454545;
+                border: 1px solid #d19400;
+                cursor: pointer;
+                position: relative;
+                margin: -35px 0 0 473px;
             }
 
             .registered-input-text {

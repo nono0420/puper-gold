@@ -126,7 +126,6 @@ html body .registered-bg {
   background: #000000ba;
   z-index: 999;
   position: absolute;
-  display: none;
 }
 html body .registered-bg.display {
   display: block;
@@ -224,6 +223,23 @@ html body .registered-bg .registered-box input {
 }
 html body .registered-bg .registered-box input::-webkit-input-placeholder {
   color: #4c3367;
+}
+html body .registered-bg .registered-box .get {
+  width: 100px;
+  height: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbb45), to(#fffaa8));
+  background: linear-gradient(to bottom, #ffbb45 0%, #fffaa8 100%);
+  border-radius: 15px;
+  text-decoration: none;
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  color: #454545;
+  border: 1px solid #d19400;
+  cursor: pointer;
+  position: relative;
+  margin: -35px 0 0 473px;
 }
 html body .registered-bg .registered-box .registered-input-text {
   width: 620px;
