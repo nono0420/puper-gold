@@ -191,7 +191,7 @@ html body .registered-bg .registered-box .registered-input-box {
       flex-wrap: wrap;
 }
 html body .registered-bg .registered-box .registered-input-box input {
-  width: 203px;
+  width: 218px;
   height: 35px;
   padding-top: 2px;
   border-radius: 20px;
@@ -206,6 +206,8 @@ html body .registered-bg .registered-box .registered-input-box input {
   font-weight: bold;
   margin: 12px 0 0px 51px;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html body .registered-bg .registered-box input {
   width: 520px;

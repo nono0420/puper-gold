@@ -195,7 +195,7 @@ html body {
                 flex-wrap: wrap;
     
                 input {
-                    width: 203px;
+                    width: 218px;
                     height: 35px;
                     // line-height: 35px;
                     padding-top: 2px;
@@ -210,6 +210,7 @@ html body {
                     font-weight: bold;
                     margin: 12px 0 0px 51px;
                     position: relative;
+                    box-sizing: border-box;
                 }
             }
 
