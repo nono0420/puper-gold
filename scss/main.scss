@@ -1,7 +1,7 @@
 html body {
     width: 100%;
-    min-width: 1400px;
-    height: auto;
+    min-width: 1200px;
+    height: 100%;
     font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
     position: relative;
     background: #ae35e9;
@@ -339,11 +339,16 @@ html body {
             width: 1400px;
             height: 108px;
             margin: auto;
+
+            @media(max-width:1200px){
+                width: 1200px;
+            }
     
             .top-1 {
                 width: 730px;
                 height: 44px;
                 float: right;
+                position: relative;
     
                 .top-1-box {
                     width: 100%;
@@ -455,6 +460,27 @@ html body {
                         }
                     }
                 }
+
+                @media(max-width:1400px){
+                    padding-right: 55px;
+                }
+
+                @media(max-width:1376px){
+                    padding-right: 60px;
+                }
+
+                @media(max-width:1350px){
+                    padding-right: 90px;
+                }
+
+                @media(max-width:1322px){
+                    padding-right: 150px;
+                }
+
+                @media(max-width:1200px){
+                    padding-right: 250px;
+                    position: relative;
+                 }
             }
             
             .top-2 {
@@ -463,6 +489,7 @@ html body {
                 background-color: #fff;
                 border-radius: 50px;
                 float: right;
+                position: relative;
     
                 .logo {
                     width: 153px;
@@ -482,7 +509,6 @@ html body {
                     float: left;
     
                     li {
-                       font-size: 18px;
                        text-align: center;
                        line-height: 64px;
                        color: #d7075f;
@@ -491,6 +517,11 @@ html body {
                        overflow:hidden;
                        position: relative;
                        transition: 0.3s;
+
+                       @media(max-width:1400px){
+                        width: 120px;
+                        margin-left: 10px;
+                    }
 
                        &:after {
                         position: absolute;
@@ -512,7 +543,6 @@ html body {
                         }
                       }
 
-
                       a {
                         font-size: 18px;
                         text-align: center;
@@ -522,6 +552,11 @@ html body {
                         font-weight: bold;
                         cursor: pointer;
                         transition: 0.3s;
+
+                        @media(max-width:1400px){
+                            font-size: 16px;
+                        }
+                        
                       }
                     }
 
@@ -533,6 +568,8 @@ html body {
                         position: absolute;
                         cursor: pointer;
                         font-weight: bold;
+
+                       
     
                         &:hover,&:active,&.active {
     
@@ -569,8 +606,59 @@ html body {
                            position: absolute;
                            cursor: pointer;
                         }
+
+                        @media(max-width:1400px){
+                            margin: 13px 0 0 1100px;
+                        }
+                        
+                        @media(max-width:1350px){
+                            margin: 13px 0 0 1000px;
+                        }
+
+                        @media(max-width:1200px){
+                            margin: 13px 0 0 900px;
+                        }
                     }
+
+                    @media(max-width:1400px){
+                       width: 800px;
+                       margin-left: 30px;
+                    }
+
+                    @media(max-width:1200px){
+                        width: 700px;
+                        margin-left: 20px;
+                     }
                 }
+
+                @media(max-width:1400px){
+                    width: 1280px;
+                    margin: auto;
+                    float: left;
+                    margin-left: 50px;
+                }
+
+                @media(max-width:1350px){
+                    width: 1260px;
+                    margin: auto;
+                    float: left;
+                    margin-left: 40px;
+                }
+
+                @media(max-width:1322px){
+                    width: 1200px;
+                    margin: auto;
+                    float: left;
+                    margin-left: 45px;
+                }
+
+                @media(max-width:1200px){
+                    width: 1100px;
+                    margin: auto;
+                    float: left;
+                    margin-left: 40px;
+                }
+
             }
         }
     }
@@ -583,6 +671,10 @@ html body {
             width: 1400px;
             height: auto;
             margin: auto;
+
+            @media(max-width:1200px){
+                width: 1200px;
+            }
             
             .banner {
                 width: 1400px;
@@ -638,6 +730,10 @@ html body {
                     }
                     
                 } 
+
+                @media(max-width:1200px){
+                    width: 1200px;
+                }
             }
 
             .news {
@@ -647,6 +743,7 @@ html body {
                 border-radius: 50px;
                 border: 2px solid #ffe249;
                 margin-left: 20px;
+                margin: auto;
 
                 marquee {
                     width: 1300px;
@@ -657,6 +754,25 @@ html body {
                     font-weight: bold;
                     padding-left: 30px;
                     margin-left: 25px;
+
+                    @media(max-width:1400px){
+                        width: 1100px;
+                        margin: auto;
+                    }
+
+                    @media(max-width:1200px){
+                        width: 1050px;
+                        margin: auto;
+                    }
+                }
+
+                @media(max-width:1400px){
+                    width: 1200px;
+                }
+
+                @media(max-width:1200px){
+                    width: 1100px;
+                    margin-left: 55px;
                 }
             }
 
@@ -667,6 +783,19 @@ html body {
                 z-index: 99;
                 float: left;
                 margin: -40px 0 0 0;
+
+                @media(max-width:1400px){
+                    width: 40px;
+                    height: 39px;
+                    background-size: 100%;
+                    margin: -40px 0 0 79px;
+                    position: absolute;
+                }
+
+                @media(max-width:1200px){
+                    margin: -40px 0 0 35px;
+                    position: absolute;
+                }
             }
 
             .eight-main {
@@ -676,12 +805,24 @@ html body {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 margin-top: 35px;
+                // margin: auto;
+
+                @media(max-width:1200px){
+                    width: 1200px;
+                }
 
                 .eight-bg {
                   width: 315px;
                   height: 305px;
                   background: url(../img/main-bg.webp) no-repeat;
                   cursor: pointer;
+                  margin: auto;
+
+                  @media(max-width:1200px){
+                    width: 245px;
+                    height: 285px;
+                    background-size: 100%;
+                }
 
                   &:hover,&:active,&.active {
 
@@ -726,37 +867,89 @@ html body {
                       margin: -57px 0 0 0;
                       pointer-events: none;
                       transition: 0.3s all;
+
+                    //   @media(max-width:1400px){
+                    //     width: 300px;
+                    //     height: 295px;
+                    //  }
+                  }
+                  .girl {
+                    @media(max-width:1400px){
+                        width: 280px;
+                        height: 271px;
+                        margin-left: -25px;
+                     }
                   }
 
                   .girl-2 {
                       background-position-x: calc(100% + 750px);
+
+                      @media(max-width:1400px){
+                       width: 290px;
+                       height: 271px;
+                    }
                   }
 
                   .fish {
                     background-position-x: calc(100% + 385px);
+
+                    @media(max-width:1400px){
+                        width: 297px;
+                        height: 271px;
+                     }
                   }
 
                   .tiger {
                     background-position-x: calc(100% + 35px);
+
+                    @media(max-width:1400px){
+                        width: 278px;
+                        height: 287px;
+                        margin: -73px 0 0 -6px;
+                     }
                   }
 
                   .ball{
                     background-position-y: calc(100% + 712px);
+
+                    @media(max-width:1400px){
+                        width: 290px;
+                        height: 282px;
+                        margin: -54px 0 0 -40px;
+                     }
                   }
 
                   .pe {
                     background-position-y: calc(100% + 712px);
                     background-position-x: calc(100% + 730px);
+
+                    @media(max-width:1400px){
+                        width: 312px;
+                        height: 271px;
+                        margin: -46px 0 0 -27px;
+                     }
                   }
 
                   .card {
                     background-position-y: calc(100% + 712px);
                     background-position-x: calc(100% + 385px);
+
+                    @media(max-width:1400px){
+                        width: 293px;
+                        height: 290px;
+                        margin-top: -63px;
+                     }
                   }
   
                   .card-2 {
                     background-position-y: calc(100% + 712px);
                     background-position-x: calc(100% + 35px);
+
+                    @media(max-width:1400px){
+                        width: 270px;
+                        height: 289px;
+                        margin-top: -66px;
+                     }
                   }
 
                   .eight-hover {
@@ -770,6 +963,14 @@ html body {
                       cursor: pointer;
                       transition: 0.5s;
                       opacity: 0;
+
+                      @media(max-width:1400px){
+                        width: 128px;
+                        height: 128px;
+                        line-height: 28px;
+                        font-size: 24px;
+                        margin: 67px 0 0 30px;
+                    }
 
                       .eight-hover-text {
                         width: 60px;
@@ -799,6 +1000,14 @@ html body {
                       margin: 236px 0 0 5px;
                       position: absolute;
                       cursor: pointer;
+
+                      @media(max-width:1400px){
+                        width: 232px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 26px;
+                        margin: 216px 0 0 5px;
+                    }
                   }
                 }
             }
@@ -818,6 +1027,10 @@ html body {
                 width: 1400px;
                 height: auto;
                 margin: auto;
+
+                @media(max-width:1200px){
+                    width: 1200px;
+                }
     
                 ul {
                     width: 695px;
@@ -826,6 +1039,11 @@ html body {
                     flex-wrap: nowrap;
                     justify-content: space-around;
                     float: left;
+
+                    @media(max-width:1400px){
+                        width: 500px;
+                        margin-left: 100px;
+                    }
     
                     li {
                         text-align: center;
@@ -836,6 +1054,10 @@ html body {
                         overflow:hidden;
                         position: relative;
                         transition: 0.3s;
+
+                        @media(max-width:1400px){
+                            font-size: 16px;
+                        }
 
                         &:after {
                             position: absolute;
@@ -879,6 +1101,11 @@ html body {
                 width: 1400px;
                 height: 98px;
                 margin: auto;
+
+               @media(max-width:1200px){
+                width: 1200px;
+                margin: auto;
+               }
 
                 .footer-text {
                     width: 755px;

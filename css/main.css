@@ -1,8 +1,8 @@
 @charset "UTF-8";
 html body {
   width: 100%;
-  min-width: 1400px;
-  height: auto;
+  min-width: 1200px;
+  height: 100%;
   font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
   position: relative;
   background: #ae35e9;
@@ -330,10 +330,16 @@ html body header article {
   height: 108px;
   margin: auto;
 }
+@media (max-width: 1200px) {
+  html body header article {
+    width: 1200px;
+  }
+}
 html body header article .top-1 {
   width: 730px;
   height: 44px;
   float: right;
+  position: relative;
 }
 html body header article .top-1 .top-1-box {
   width: 100%;
@@ -442,12 +448,39 @@ html body header article .top-1 .top-1-box .chinese-select select option {
   font-weight: 600;
   color: #000;
 }
+@media (max-width: 1400px) {
+  html body header article .top-1 {
+    padding-right: 55px;
+  }
+}
+@media (max-width: 1376px) {
+  html body header article .top-1 {
+    padding-right: 60px;
+  }
+}
+@media (max-width: 1350px) {
+  html body header article .top-1 {
+    padding-right: 90px;
+  }
+}
+@media (max-width: 1322px) {
+  html body header article .top-1 {
+    padding-right: 150px;
+  }
+}
+@media (max-width: 1200px) {
+  html body header article .top-1 {
+    padding-right: 250px;
+    position: relative;
+  }
+}
 html body header article .top-2 {
   width: 100%;
   height: 64px;
   background-color: #fff;
   border-radius: 50px;
   float: right;
+  position: relative;
 }
 html body header article .top-2 .logo {
   width: 153px;
@@ -470,7 +503,6 @@ html body header article .top-2 ul {
   float: left;
 }
 html body header article .top-2 ul li {
-  font-size: 18px;
   text-align: center;
   line-height: 64px;
   color: #d7075f;
@@ -480,6 +512,12 @@ html body header article .top-2 ul li {
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 1400px) {
+  html body header article .top-2 ul li {
+    width: 120px;
+    margin-left: 10px;
+  }
 }
 html body header article .top-2 ul li:after {
   position: absolute;
@@ -507,6 +545,11 @@ html body header article .top-2 ul li a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 1400px) {
+  html body header article .top-2 ul li a {
+    font-size: 16px;
+  }
 }
 html body header article .top-2 ul .top-2-icon {
   width: 105px;
@@ -566,6 +609,65 @@ html body header article .top-2 ul .top-2-icon .icon {
   position: absolute;
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  html body header article .top-2 ul .top-2-icon {
+    margin: 13px 0 0 1100px;
+  }
+}
+@media (max-width: 1350px) {
+  html body header article .top-2 ul .top-2-icon {
+    margin: 13px 0 0 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  html body header article .top-2 ul .top-2-icon {
+    margin: 13px 0 0 900px;
+  }
+}
+@media (max-width: 1400px) {
+  html body header article .top-2 ul {
+    width: 800px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  html body header article .top-2 ul {
+    width: 700px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  html body header article .top-2 {
+    width: 1280px;
+    margin: auto;
+    float: left;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1350px) {
+  html body header article .top-2 {
+    width: 1260px;
+    margin: auto;
+    float: left;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1322px) {
+  html body header article .top-2 {
+    width: 1200px;
+    margin: auto;
+    float: left;
+    margin-left: 45px;
+  }
+}
+@media (max-width: 1200px) {
+  html body header article .top-2 {
+    width: 1100px;
+    margin: auto;
+    float: left;
+    margin-left: 40px;
+  }
+}
 html body main {
   width: 100%;
   height: auto;
@@ -574,6 +676,11 @@ html body main article {
   width: 1400px;
   height: auto;
   margin: auto;
+}
+@media (max-width: 1200px) {
+  html body main article {
+    width: 1200px;
+  }
 }
 html body main article .banner {
   width: 1400px;
@@ -628,6 +735,11 @@ html body main article .banner .swiper-pagination .swiper-pagination-bullet {
 html body main article .banner .swiper-pagination .swiper-pagination-bullet-active {
   background: #fff;
 }
+@media (max-width: 1200px) {
+  html body main article .banner {
+    width: 1200px;
+  }
+}
 html body main article .news {
   width: 1375px;
   height: 37px;
@@ -635,6 +747,7 @@ html body main article .news {
   border-radius: 50px;
   border: 2px solid #ffe249;
   margin-left: 20px;
+  margin: auto;
 }
 html body main article .news marquee {
   width: 1300px;
@@ -646,6 +759,29 @@ html body main article .news marquee {
   padding-left: 30px;
   margin-left: 25px;
 }
+@media (max-width: 1400px) {
+  html body main article .news marquee {
+    width: 1100px;
+    margin: auto;
+  }
+}
+@media (max-width: 1200px) {
+  html body main article .news marquee {
+    width: 1050px;
+    margin: auto;
+  }
+}
+@media (max-width: 1400px) {
+  html body main article .news {
+    width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  html body main article .news {
+    width: 1100px;
+    margin-left: 55px;
+  }
+}
 html body main article .news-icon {
   width: 47px;
   height: 46px;
@@ -653,6 +789,21 @@ html body main article .news-icon {
   z-index: 99;
   float: left;
   margin: -40px 0 0 0;
+}
+@media (max-width: 1400px) {
+  html body main article .news-icon {
+    width: 40px;
+    height: 39px;
+    background-size: 100%;
+    margin: -40px 0 0 79px;
+    position: absolute;
+  }
+}
+@media (max-width: 1200px) {
+  html body main article .news-icon {
+    margin: -40px 0 0 35px;
+    position: absolute;
+  }
 }
 html body main article .eight-main {
   width: 100%;
@@ -666,11 +817,24 @@ html body main article .eight-main {
       justify-content: space-around;
   margin-top: 35px;
 }
+@media (max-width: 1200px) {
+  html body main article .eight-main {
+    width: 1200px;
+  }
+}
 html body main article .eight-main .eight-bg {
   width: 315px;
   height: 305px;
   background: url(../img/main-bg.webp) no-repeat;
   cursor: pointer;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  html body main article .eight-main .eight-bg {
+    width: 245px;
+    height: 285px;
+    background-size: 100%;
+  }
 }
 html body main article .eight-main .eight-bg:hover, html body main article .eight-main .eight-bg:active, html body main article .eight-main .eight-bg.active {
   -webkit-filter: brightness(1.1);
@@ -745,29 +909,83 @@ html body main article .eight-main .eight-bg .eight-img {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .girl {
+    width: 280px;
+    height: 271px;
+    margin-left: -25px;
+  }
+}
 html body main article .eight-main .eight-bg .girl-2 {
   background-position-x: calc(100% + 750px);
+}
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .girl-2 {
+    width: 290px;
+    height: 271px;
+  }
 }
 html body main article .eight-main .eight-bg .fish {
   background-position-x: calc(100% + 385px);
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .fish {
+    width: 297px;
+    height: 271px;
+  }
+}
 html body main article .eight-main .eight-bg .tiger {
   background-position-x: calc(100% + 35px);
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .tiger {
+    width: 278px;
+    height: 287px;
+    margin: -73px 0 0 -6px;
+  }
+}
 html body main article .eight-main .eight-bg .ball {
   background-position-y: calc(100% + 712px);
+}
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .ball {
+    width: 290px;
+    height: 282px;
+    margin: -54px 0 0 -40px;
+  }
 }
 html body main article .eight-main .eight-bg .pe {
   background-position-y: calc(100% + 712px);
   background-position-x: calc(100% + 730px);
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .pe {
+    width: 312px;
+    height: 271px;
+    margin: -46px 0 0 -27px;
+  }
+}
 html body main article .eight-main .eight-bg .card {
   background-position-y: calc(100% + 712px);
   background-position-x: calc(100% + 385px);
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .card {
+    width: 293px;
+    height: 290px;
+    margin-top: -63px;
+  }
+}
 html body main article .eight-main .eight-bg .card-2 {
   background-position-y: calc(100% + 712px);
   background-position-x: calc(100% + 35px);
+}
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .card-2 {
+    width: 270px;
+    height: 289px;
+    margin-top: -66px;
+  }
 }
 html body main article .eight-main .eight-bg .eight-hover {
   width: 135px;
@@ -781,6 +999,15 @@ html body main article .eight-main .eight-bg .eight-hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
+}
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg .eight-hover {
+    width: 128px;
+    height: 128px;
+    line-height: 28px;
+    font-size: 24px;
+    margin: 67px 0 0 30px;
+  }
 }
 html body main article .eight-main .eight-bg .eight-hover .eight-hover-text {
   width: 60px;
@@ -808,6 +1035,15 @@ html body main article .eight-main .eight-bg p {
   position: absolute;
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  html body main article .eight-main .eight-bg p {
+    width: 232px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    margin: 216px 0 0 5px;
+  }
+}
 html body footer {
   width: 100%;
   height: auto;
@@ -822,6 +1058,11 @@ html body footer .footer-top article {
   height: auto;
   margin: auto;
 }
+@media (max-width: 1200px) {
+  html body footer .footer-top article {
+    width: 1200px;
+  }
+}
 html body footer .footer-top article ul {
   width: 695px;
   height: auto;
@@ -834,6 +1075,12 @@ html body footer .footer-top article ul {
       justify-content: space-around;
   float: left;
 }
+@media (max-width: 1400px) {
+  html body footer .footer-top article ul {
+    width: 500px;
+    margin-left: 100px;
+  }
+}
 html body footer .footer-top article ul li {
   text-align: center;
   line-height: 57px;
@@ -844,6 +1091,11 @@ html body footer .footer-top article ul li {
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 1400px) {
+  html body footer .footer-top article ul li {
+    font-size: 16px;
+  }
 }
 html body footer .footer-top article ul li:after {
   position: absolute;
@@ -879,6 +1131,12 @@ html body footer .footer-bottom article {
   width: 1400px;
   height: 98px;
   margin: auto;
+}
+@media (max-width: 1200px) {
+  html body footer .footer-bottom article {
+    width: 1200px;
+    margin: auto;
+  }
 }
 html body footer .footer-bottom article .footer-text {
   width: 755px;
