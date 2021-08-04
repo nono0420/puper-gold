@@ -126,6 +126,7 @@ html body .registered-bg {
   background: #000000ba;
   z-index: 999;
   position: absolute;
+  display: none;
 }
 html body .registered-bg.display {
   display: block;
