@@ -193,7 +193,8 @@ html body .registered-bg .registered-box .registered-input-box {
 html body .registered-bg .registered-box .registered-input-box input {
   width: 218px;
   height: 35px;
-  padding-top: 2px;
+  line-height: 35px;
+  padding-top: 4px;
   border-radius: 20px;
   padding-left: 15px;
   color: #4c3367;
